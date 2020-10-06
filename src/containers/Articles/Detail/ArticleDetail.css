@@ -1,0 +1,112 @@
+.ArticleDetail{
+    display: flex;
+    flex-direction: column;
+}
+
+.ArticleDetail .header{
+    flex-direction: row;
+    display: flex;
+    align-items: center;
+}
+
+.ArticleDetail .header .back{
+    flex:1;
+    margin: 10px;
+    text-align: left;
+}
+.ArticleDetail .header button{
+    font-size: 15px;
+    padding: 3px;
+}
+
+.ArticleDetail .header .logout{
+    flex:1;
+    margin: 10px;
+    text-align: right;
+}
+
+.ArticleDetail .header .logout button{
+    background-color: crimson;
+    color: white;
+}
+
+.ArticleDetail .newComment{
+    margin-top: 30px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    height: 40px;
+    border-width: 1px;
+    border-color: black;
+    border-style: solid;
+}
+.ArticleDetail .newComment label{
+    flex: 1;
+}
+.ArticleDetail .newComment textarea{
+    flex: 6;
+}
+.ArticleDetail .newComment button{
+    height: 100%;
+    flex: 1;
+    margin: 10px;
+    background-color: aqua;
+}
+
+.ArticleDetail .comments{
+    margin-top: 10px;
+    flex-direction: column;
+    display: flex;
+}
+
+.ArticleDetail .comments label{
+    width: 100%;
+    text-align: left;
+    margin: 10px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.ArticleDetail .comments .commentBox{
+    flex-direction: row;
+    display: flex;
+    align-items: center;
+    height: 30px;
+}
+.ArticleDetail .comments .commentBox .component{
+    flex:7;
+}
+.ArticleDetail .comments .commentBox .editBtn{
+    flex:1;
+    flex-direction: row;
+    display: flex;
+    width: 100%;
+}
+.ArticleDetail .btns{
+    flex-direction: row;
+    display: flex;
+    text-align: right;
+    flex:1;
+}
+
+.ArticleDetail .btns button{
+    flex:1;
+    width:100%;
+    margin: 5px;
+}
+
+.ArticleDetail .article .selected-article{
+    margin: 20px;
+}
+
+.ArticleDetail .article .selected-article .author{
+    display: flex;
+}
+.ArticleDetail .article .selected-article .author .left{
+    flex:1;
+}
+.ArticleDetail .article .selected-article .author h5{
+    flex:10;
+    text-align: center;
+}
+

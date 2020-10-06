@@ -1,0 +1,45 @@
+.ArticleList .articles .header{
+    display: flex;
+    flex-direction: row;
+    border-width: 2px;
+    border-color: aqua;
+    border-bottom-style: solid;
+    height: 30px;
+    margin-top: 20px;
+}
+
+.ArticleList .articles .header .left{
+    flex: 1;
+    font-weight: bold;
+    
+}
+
+.ArticleList .articles .header .center{
+    flex: 5;
+    font-weight: bold;
+}
+
+.ArticleList .articles .header .right{
+    flex: 1;
+    font-weight: bold;
+}
+
+.ArticleList .logout{
+    margin: 10px;
+    text-align: right;
+}
+
+.ArticleList .logout button{
+    background-color: crimson;
+    color: white;
+    padding: 5px;
+}
+
+.ArticleList .create{
+    text-align: right;
+    margin:10px;
+}
+.ArticleList .create button{
+    padding: 5px;
+    background-color: aqua;
+}

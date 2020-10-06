@@ -1,0 +1,83 @@
+.NewArticle{
+    display: flex;
+    flex-direction: column;
+}
+
+.NewArticle .header{
+    flex-direction: row;
+    display: flex;
+    align-items: center;
+}
+
+.NewArticle .header .back{
+    flex:1;
+    margin: 10px;
+    text-align: left;
+}
+.NewArticle .header button{
+    font-size: 15px;
+    padding: 3px;
+}
+
+.NewArticle .header .logout{
+    flex:1;
+    margin: 10px;
+    text-align: right;
+}
+
+.NewArticle .header .logout button{
+    background-color: crimson;
+    color: white;
+}
+
+.NewArticle .confirm{
+    text-align: center;
+    margin:10px;
+}
+.NewArticle .confirm button{
+    padding: 5px;
+    background-color: aqua;
+}
+
+.NewArticle .tabBtnContainer{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 20px;
+}
+
+.NewArticle .tabBtnContainer .writeTab{
+    flex:1;
+}
+.NewArticle .tabBtnContainer .writeTab button{
+    width: 100%;
+    padding: 10px;
+}
+
+.NewArticle .tabBtnContainer .previewTab{
+    flex:1;
+}
+.NewArticle .tabBtnContainer .previewTab button{
+    width: 100%;
+    padding: 10px;
+}
+
+.NewArticle .tabBtnContainer button{
+    border-color: aqua;
+    font-size: 20px;
+}
+
+.NewArticle .tabBox .write-tab{
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+}
+
+.NewArticle .tabBox .write-tab input{
+    margin: 10px;
+    text-align: center;
+}
+
+.NewArticle .tabBox .write-tab label{
+    font-weight: bold;
+    font-size: 20px;
+}

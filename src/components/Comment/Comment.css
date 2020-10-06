@@ -1,0 +1,19 @@
+.comment{
+    flex-direction: row;
+    display: flex;
+    align-items: center;
+}
+
+.comment .username{
+    flex:1;
+    font-weight: bold;
+    border-right-color: aqua;
+    border-right-width: 2px;
+    border-right-style: solid;
+}
+.comment .content{
+    margin-left: 5px;
+    flex:6;
+    color: gray;
+    text-align: left;
+}

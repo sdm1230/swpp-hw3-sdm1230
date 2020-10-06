@@ -1,0 +1,19 @@
+.Article{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-top: 10px;
+    align-items: center;
+}
+
+.id{
+    flex:1
+}
+
+.title{
+    flex: 5
+}
+
+.author{
+    flex: 1
+}
