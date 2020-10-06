@@ -76,13 +76,12 @@ class ArticleCreate extends Component {
                 </div>
         }
 
-        let Btn_confirm = null;
-        if (this.state.title && this.state.content) {
-            Btn_confirm = <button id="confirm-create-article-button" onClick={() => this.postArticleHandler()}>Create</button>
-        }
-        else {
-            Btn_confirm = <button id="confirm-create-article-button" onClick={() => this.postArticleHandler()} disabled>Create</button>
-        }
+        
+        let disabledbtn =!(this.state.title && this.state.content)
+        let Btn_confirm = <button 
+            id="confirm-create-article-button" 
+            onClick={() => this.postArticleHandler()} 
+            disabled={disabledbtn}>Create</button>
 
         return (
             <div className="NewArticle">

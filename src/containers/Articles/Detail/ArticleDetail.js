@@ -136,20 +136,14 @@ class ArticleDetail extends Component {
 
 
 
+        let disabledBtn = !this.state.comment
+        let Btn_confirm =
+            <button
+                id="confirm-create-comment-button"
+                onClick={() => this.postComment()}
+                disabled={disabledBtn}
+            >Create Comment</button>
 
-        let Btn_confirm = null;
-        if (this.state.comment) {
-            Btn_confirm =
-                <button id="confirm-create-comment-button"
-                    onClick={() => this.postComment()}
-                >Create Comment</button>
-        }
-        else {
-            Btn_confirm =
-                <button id="confirm-create-comment-button"
-                    onClick={() => this.postComment()}
-                    disabled>Create Comment</button>
-        }
 
 
         return (

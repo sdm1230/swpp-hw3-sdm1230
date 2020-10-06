@@ -78,18 +78,12 @@ class ArticleEdit extends Component {
                 </div>
         }
 
-        let Btn_confirm = null;
-        if (this.state.title && this.state.content) {
-            Btn_confirm =
-                <button id="confirm-edit-article-button"
-                    onClick={() => this.EditArticleHandler()}
-                >Submit</button>
-        }
-        else {
-            Btn_confirm = <button id="confirm-edit-article-button"
-                onClick={() => this.EditArticleHandler()} disabled
-            >Submit</button>
-        }
+        let disabledBtn = !(this.state.title && this.state.content)
+        let Btn_confirm =
+            <button id="confirm-edit-article-button"
+                onClick={() => this.EditArticleHandler()}
+                disabled={disabledBtn}
+            >Edit</button>
 
         return (
             <div className="NewArticle">
@@ -115,17 +109,17 @@ class ArticleEdit extends Component {
                 <div className="tabBtnContainer">
 
                     <div className="writeTab">
-                    <button id="write-tab-button" onClick={() => {
-                        this.setState({ selectedWriteTab: true, selectedPreviewTab: false })
-                    }} style={{color: this.state.selectedWriteTab? "aqua":"black"}}
-                    >WriteTab</button>
+                        <button id="write-tab-button" onClick={() => {
+                            this.setState({ selectedWriteTab: true, selectedPreviewTab: false })
+                        }} style={{ color: this.state.selectedWriteTab ? "aqua" : "black" }}
+                        >WriteTab</button>
                     </div>
 
                     <div className="previewTab">
-                    <button id="preview-tab-button" onClick={() => {
-                        this.setState({ selectedWriteTab: false, selectedPreviewTab: true })
-                    }} style={{color: this.state.selectedPreviewTab? "aqua":"black"}}
-                    >PreviewTab</button>
+                        <button id="preview-tab-button" onClick={() => {
+                            this.setState({ selectedWriteTab: false, selectedPreviewTab: true })
+                        }} style={{ color: this.state.selectedPreviewTab ? "aqua" : "black" }}
+                        >PreviewTab</button>
                     </div>
 
                 </div>
