@@ -87,7 +87,7 @@ class ArticleCreate extends Component {
             <div className="NewArticle">
                 <div className="header">
                     <div className="back">
-                        <button id="back-create-article-button" onClick={() => this.props.history.goBack()}>Back</button>
+                        <button id="back-create-article-button" onClick={() => this.props.history.push('/articles')}>Back</button>
                     </div>
 
                     <h1>ArticleCreate</h1>
