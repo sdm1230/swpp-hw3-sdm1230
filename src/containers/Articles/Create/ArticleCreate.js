@@ -42,7 +42,7 @@ class ArticleCreate extends Component {
                     loginUser: this.props.storedUsers.find(user => user.logged_in)
                 })
             }
-            else return <Redirect to='/login' />
+            else this.props.history.push('/login');
         }
 
         let tab = null;

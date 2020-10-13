@@ -34,7 +34,7 @@ class ArticleEdit extends Component {
             if (res) { }
             else return;
         }
-        this.props.history.goBack();
+        this.props.history.push('/articles/'+this.props.selectedArticle.id);
     }
 
     render() {
@@ -44,7 +44,7 @@ class ArticleEdit extends Component {
                     loginUser: this.props.storedUsers.find(user => user.logged_in)
                 })
             }
-            else return <Redirect to='/login' />
+            else this.props.history.push('/login');
         }
 
         let tab = null;
@@ -86,7 +86,7 @@ class ArticleEdit extends Component {
             >Edit</button>
 
         return (
-            <div className="NewArticle">
+            <div className="EditArticle">
 
                 <div className="header">
                     <div className='back'>

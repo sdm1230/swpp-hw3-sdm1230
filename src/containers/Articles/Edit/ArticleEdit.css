@@ -1,83 +1,83 @@
-.NewArticle{
+.EditArticle{
     display: flex;
     flex-direction: column;
 }
 
-.NewArticle .header{
+.EditArticle .header{
     flex-direction: row;
     display: flex;
     align-items: center;
 }
 
-.NewArticle .header .back{
+.EditArticle .header .back{
     flex:1;
     margin: 10px;
     text-align: left;
 }
-.NewArticle .header button{
+.EditArticle .header button{
     font-size: 15px;
     padding: 3px;
 }
 
-.NewArticle .header .logout{
+.EditArticle .header .logout{
     flex:1;
     margin: 10px;
     text-align: right;
 }
 
-.NewArticle .header .logout button{
+.EditArticle .header .logout button{
     background-color: crimson;
     color: white;
 }
 
-.NewArticle .confirm{
+.EditArticle .confirm{
     text-align: center;
     margin:10px;
 }
-.NewArticle .confirm button{
+.EditArticle .confirm button{
     padding: 5px;
     background-color: aqua;
 }
 
-.NewArticle .tabBtnContainer{
+.EditArticle .tabBtnContainer{
     display: flex;
     flex-direction: row;
     margin-bottom: 20px;
 }
 
-.NewArticle .tabBtnContainer .writeTab{
+.EditArticle .tabBtnContainer .writeTab{
     flex:1;
 }
-.NewArticle .tabBtnContainer .writeTab button{
+.EditArticle .tabBtnContainer .writeTab button{
     width: 100%;
     padding: 10px;
 }
 
-.NewArticle .tabBtnContainer .previewTab{
+.EditArticle .tabBtnContainer .previewTab{
     flex:1;
 }
-.NewArticle .tabBtnContainer .previewTab button{
+.EditArticle .tabBtnContainer .previewTab button{
     width: 100%;
     padding: 10px;
 }
 
-.NewArticle .tabBtnContainer button{
+.EditArticle .tabBtnContainer button{
     border-color: aqua;
     font-size: 20px;
 }
 
-.NewArticle .tabBox .write-tab{
+.EditArticle .tabBox .write-tab{
     display: flex;
     flex-direction: column;
     margin: 10px;
 }
 
-.NewArticle .tabBox .write-tab input{
+.EditArticle .tabBox .write-tab input{
     margin: 10px;
     text-align: center;
 }
 
-.NewArticle .tabBox .write-tab label{
+.EditArticle .tabBox .write-tab label{
     font-weight: bold;
     font-size: 20px;
 }

@@ -43,7 +43,7 @@ class ArticleDetail extends Component {
                     loginUser: this.props.storedUsers.find(user => user.logged_in)
                 })
             }
-            else return <Redirect to='/login' />
+            else this.props.history.push('/login');
         }
 
         if (this.props.selectedArticle.id !== parseInt(this.props.match.params.id)) {
